@@ -1,0 +1,10 @@
+Python
+    https://www.treinaweb.com.br/blog/consumindo-apis-com-python-parte-1
+    https://www.treinaweb.com.br/blog/consumindo-apis-com-python-parte-2
+    
+    Json
+        https://www.delftstack.com/pt/howto/python/python-save-dictionary-to-json/
+
+API
+    https://www.youtube.com/watch?v=GZvSYJDk-us
+
