@@ -13,5 +13,5 @@ while True:
     data = requisicao.json()
     with open("data.json", "w") as outfile:
         json.dump(data, outfile)
-
-    time.sleep(3)
+    print('Loop 10s', flush=True)
+    time.sleep(10)
