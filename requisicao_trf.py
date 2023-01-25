@@ -2,10 +2,16 @@ import requests
 import time
 import json
 
-while True:
-    #requisição API
-    response=requests.get("/api/v1/comunicacao")
-    data=response.json()
 
-    #intervalo de 5 segundos para a próxima requisição
-    time.sleep(5)
+#repetição
+while True:
+
+    url = 'https://hcomunicaapi.cnj.jus.br/api/v1/comunicacao'
+
+    #requisição API
+    requisicao = requests.get(url)
+    data = requisicao.json()
+    with open("data.json", "w") as outfile:
+        json.dump(data, outfile)
+
+    time.sleep(3)
