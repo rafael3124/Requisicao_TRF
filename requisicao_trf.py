@@ -11,7 +11,7 @@ for x in range (30):
     #requisição API
     requisicao = requests.get(url)
     data = requisicao.json()
-    with open("data.json", "a") as outfile:
+    with open("map.json", "a") as outfile:
         json.dump(data, outfile)
     #imprime a numeração da iteração
     print('Loop 10s Iteração nº: ', x)
