@@ -8,6 +8,14 @@ for x in range (30):
 
     url = 'https://hcomunicaapi.cnj.jus.br/api/v1/comunicacao'
 
+    #Status da requisição
+    response = requests.get(url)
+    if response.status_code == 200:
+        data = response.json()
+    else:
+        print("Request failed with status code:", response.status_code)
+
+
     #requisição API
     requisicao = requests.get(url)
     data = requisicao.json()
